@@ -1,7 +1,5 @@
 # single-cell-pbmc-representation
 
-# Single-Cell PBMC Representation
-
 This project demonstrates a full single-cell RNA sequencing (scRNA-seq) analysis workflow using Peripheral Blood Mononuclear Cells (PBMC) data. It was designed as a reproducible, well-documented analysis to showcase technical competency in single-cell analysis tools and data interpretation for a prospective PhD application.
 
 ---
