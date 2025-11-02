@@ -1,0 +1,7 @@
+scanpy
+scvi-tools
+squidpy
+matplotlib
+seaborn
+jupyterlab
+
