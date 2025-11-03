@@ -58,9 +58,8 @@ All plots are saved in the `/outputs/` folder and include:
 ## 📁 Repository Structure
 
 ```
-├── data/                    # Automatically downloaded PBMC data
+├── data/                   # Automatically downloaded PBMC data
 ├── notebooks/              # Main analysis notebook (.ipynb)
-├── outputs/                # Generated plots
 ├── README.md               # Project documentation
 ├── requirements.txt        # Environment dependencies
 ```
