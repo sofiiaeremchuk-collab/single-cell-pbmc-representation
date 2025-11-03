@@ -1,3 +1,7 @@
+.venv/
 __pycache__/
 .ipynb_checkpoints/
+*.h5ad
+*.csv
+*.log
 .DS_Store

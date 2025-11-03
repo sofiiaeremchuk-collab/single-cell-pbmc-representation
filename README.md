@@ -1,4 +1,4 @@
-# single-cell-pbmc-representation
+# Single-Cell PBMC Representation
 
 This project demonstrates a full single-cell RNA sequencing (scRNA-seq) analysis workflow using Peripheral Blood Mononuclear Cells (PBMC) data. It was designed as a reproducible, well-documented analysis to showcase technical competency in single-cell analysis tools and data interpretation for a prospective PhD application.
 
@@ -6,46 +6,39 @@ This project demonstrates a full single-cell RNA sequencing (scRNA-seq) analysis
 
 ## 🧪 Project Overview
 
-* **Dataset**: 10X PBMC 3k dataset (publicly available from [10x Genomics](https://www.10xgenomics.com/))
+* **Dataset**: 10X PBMC 3k dataset (publicly available from 10x Genomics)
 * **Goal**: Identify major immune cell populations in PBMCs using unsupervised clustering and marker gene expression.
-* **Tools**: Python, Scanpy, UMAP, Leiden clustering, Matplotlib, Seaborn
+* **Tools**: Python 3.12, Scanpy, UMAP, Leiden clustering, Matplotlib, Seaborn
 
 ---
 
 ## 📊 Analysis Workflow
 
 1. **Data Loading**
-
    * Downloaded and loaded filtered gene-barcode matrix into an `AnnData` object.
 
 2. **Quality Control (QC)**
-
    * Calculated total counts, number of genes per cell, and mitochondrial gene percentages.
    * Visualized QC metrics using violin plots.
    * Filtered low-quality cells.
 
 3. **Normalization and Feature Selection**
-
    * Normalized expression counts per cell.
    * Identified highly variable genes.
 
 4. **Dimensionality Reduction**
-
    * Performed PCA for initial structure.
    * Constructed k-nearest neighbors graph.
    * Computed UMAP embedding.
 
 5. **Clustering**
-
    * Applied Leiden clustering with resolution = 0.5 to identify cell populations.
 
 6. **Marker Gene Discovery**
-
    * Ranked differentially expressed genes for each cluster using `rank_genes_groups()`.
    * Visualized top markers per cluster.
 
 7. **Manual Cell Type Annotation**
-
    * Annotated clusters using canonical immune markers (e.g., CD3D, CD14, NKG7).
    * Generated final labeled UMAP plot.
 
@@ -76,9 +69,11 @@ All plots are saved in the `/outputs/` folder and include:
 
 ## 📦 Dependencies
 
-Install Python packages using the provided `requirements.txt`:
+Install Python 3.12 and the required packages using the provided `requirements.txt`:
 
 ```bash
+python3.12 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -97,9 +92,9 @@ pip install -r requirements.txt
 
 ## 📬 Contact
 
-**Sofiia Eremchuk**
-Contact: [sofiia.eremchuk@gmail.com](mailto:sofiia.eremchuk@gmail.com)
-Project repo: [GitHub/single-cell-pbmc-representation](https://github.com/sofiiaeremchuk-collab/single-cell-pbmc-representation)
+**Sofiia Eremchuk**  
+Contact: sofiia.eremchuk@gmail.com  
+Project repo: GitHub/sofiiaeremchuk-collab/single-cell-pbmc-representation
 
 ---
 
